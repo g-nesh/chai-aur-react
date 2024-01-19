@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({channel, btnText='visit me'}) {
+function Card({ channel, btnText = "visit me" }) {
   console.log(channel);
   return (
     <div className="relative h-[400px] w-[300px] rounded-md">
