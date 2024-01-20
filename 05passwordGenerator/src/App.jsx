@@ -28,7 +28,7 @@ function App() {
     passwordRef.current?.setSelectionRange(0, 99);
     window.navigator.clipboard.writeText(password);
   }, [password]);
-
+  
   useEffect(() => {
     passwordGenerator();
   }, [length, numberAllowed, charAllowed, passwordGenerator]);
@@ -49,7 +49,7 @@ function App() {
             onClick={copyPasswordToClipboard}
             className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0"
           >
-            copy
+            copy    
           </button>
         </div>
         <div className="flex text-sm gap-x-2">
